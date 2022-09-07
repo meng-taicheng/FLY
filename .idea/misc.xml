@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/FLY/app/src/main/res/drawable/logintuoyuan.xml" value="0.1615" />
+        <entry key="..\:/Android/FLY/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Android/FLY/app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>
