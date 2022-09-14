@@ -7,7 +7,7 @@
     android:background="@drawable/background"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".RegisterActivity">
 
     <ImageView
         android:layout_marginTop="60dp"
@@ -18,104 +18,71 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FLY LOGIN"
+        android:text="FLY REGISTER"
         android:textSize="40sp"
         android:textColor="@color/purple_200">
     </TextView>
 
     <TableLayout
+        android:layout_margin="20dp"
         android:background="@drawable/logintuoyuan"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="24dp">
+        android:layout_height="wrap_content">
         <TableRow
             android:layout_marginTop="80dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_gravity="center_vertical"
-            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             android:background="@drawable/logintuoyuan"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <EditText
                 android:id="@+id/username"
-                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                 android:maxLength="10"
                 android:maxLines="1"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:background="@null"
-                android:layout_gravity="center"
                 android:hint="username">
             </EditText>
         </TableRow>
-
         <TableRow
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_gravity="center_vertical"
-            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
             android:background="@drawable/logintuoyuan"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <EditText
                 android:id="@+id/password"
-                android:inputType="textPassword"
+                android:maxLength="16"
                 android:maxLines="1"
+                android:inputType="textPassword"
+                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:background="@null"
-                android:layout_gravity="center"
                 android:hint="password">
             </EditText>
         </TableRow>
-
         <TableRow
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_gravity="center_vertical"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="80dp"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/login"
-                android:background="@drawable/logintuoyuan"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:text="Login">
-            </Button>
-        </TableRow>
-
-        <TableRow
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:gravity="center_vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
             <Button
                 android:id="@+id/Register"
-                android:background="@drawable/logintuoyuan"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
                 android:layout_width="280dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/logintuoyuan"
                 android:text="Register">
             </Button>
-        </TableRow>
-
-        <TableRow
-            android:layout_marginBottom="50dp"
-            android:layout_marginTop="20dp">
-            <CheckBox
-                android:layout_marginLeft="100dp"
-                android:id="@+id/chain"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_weight="300"
-                android:text="save Password">
-            </CheckBox>
         </TableRow>
     </TableLayout>
 

@@ -4,13 +4,112 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/text"
+    <include layout="@layout/title"></include>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_margin="10dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Text">
-    </Button>
+        android:layout_height="200dp"
+        android:background="@drawable/banner">
+    </ImageView>
 
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/logintuoyuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <LinearLayout
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edit_queryC"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:hint="出发地">
+            </EditText>
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fly">
+            </ImageView>
+            <EditText
+                android:textStyle="bold"
+                android:id="@+id/edit_queryM"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="目的地">
+            </EditText>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/rqi"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="日期选择">
+        </EditText>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:text="带儿童">
+                </RadioButton>
+                <RadioButton
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="带婴儿">
+                </RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+        <Button
+            android:id="@+id/Go"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_margin="40dp"
+            android:background="@drawable/logintuoyuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="搜索">
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="—— 安心票 出票安心 出行安心 服务安心 ——"
+        android:textSize="18sp">
+    </TextView>
 </LinearLayout>

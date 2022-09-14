@@ -3,10 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/FLY/app/src/main/res/drawable/image.xml" value="0.172" />
         <entry key="..\:/Android/FLY/app/src/main/res/drawable/logintuoyuan.xml" value="0.1615" />
+        <entry key="..\:/Android/FLY/app/src/main/res/drawable/title_list.xml" value="0.172" />
+        <entry key="..\:/Android/FLY/app/src/main/res/layout/activity_airtickets.xml" value="0.14270833333333333" />
+        <entry key="..\:/Android/FLY/app/src/main/res/layout/activity_list.xml" value="0.2390625" />
         <entry key="..\:/Android/FLY/app/src/main/res/layout/activity_login.xml" value="0.264" />
-        <entry key="..\:/Android/FLY/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android/FLY/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Android/FLY/app/src/main/res/layout/activity_register.xml" value="0.25364583333333335" />
         <entry key="..\:/Android/FLY/app/src/main/res/layout/activity_text.xml" value="0.10520833333333333" />
+        <entry key="..\:/Android/FLY/app/src/main/res/layout/title.xml" value="0.23697916666666666" />
+        <entry key="..\:/Android/FLY/app/src/main/res/layout/title_list.xml" value="0.2526041666666667" />
       </map>
     </option>
   </component>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.fly" >
+    package="com.example.fly">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -15,16 +15,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FLY"
         android:usesCleartextTraffic="true"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".ListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AirticketsActivity"
+            android:exported="false"
+            android:label="机票查询"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
         <activity
             android:name=".TextActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"
+            android:screenOrientation="nosensor" />
         <activity
             android:name=".LoginActivity"
             android:exported="true"
-            android:usesCleartextTraffic="true" >
+            android:screenOrientation="nosensor"
+            android:usesCleartextTraffic="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,8 +45,8 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="false"
+            android:screenOrientation="nosensor" />
     </application>
 
 </manifest>
