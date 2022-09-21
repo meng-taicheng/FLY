@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                 // 此处得到选择的时间，可以进行你想要的操作
-                tv.setText(year + "年" + (monthOfYear + 1) + "月" + dayOfMonth + "日");
+                tv.setText(year + "/" + (monthOfYear + 1) + "/" + dayOfMonth);
             }
         }
                 // 设置初始日期

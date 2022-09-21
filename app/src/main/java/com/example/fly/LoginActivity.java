@@ -45,6 +45,7 @@ public class LoginActivity extends AppCompatActivity {
     String username;
     String password;
     SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,6 +111,10 @@ public class LoginActivity extends AppCompatActivity {
                 Gson gson = new Gson();
                 login = gson.fromJson(user, login.class);
                 if(login.getData().getVerifySuccess()){//回调的方法执行在子线程。
+                    sharedPreferences = getSharedPreferences("token",MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("token",login.getData().getUserInfo().getToken().toString());
+                    editor.commit();//提交数据
                     //页面跳转
                     Intent intent = new Intent();
                     intent.setClass(LoginActivity.this,MainActivity.class);
